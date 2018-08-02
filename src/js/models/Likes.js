@@ -5,15 +5,7 @@ export default class LikesList {
         this.items = [];
     }
 
-    addItem(recipe){
-        const item = {
-            id: recipe.id,
-            source: recipe.result.source_url,
-            image: recipe.result.image_url,
-            title: recipe.result.title,
-            publisher: recipe.result.publisher,
-        };
-
+    addItem(item){
         this.items.push(item);
     }
 
